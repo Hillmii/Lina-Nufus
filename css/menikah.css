@@ -15,6 +15,27 @@ html {
   min-height: 100%;
 }
 
+.pause {
+  display: none;
+}
+
+.audio {
+  position: fixed;
+  bottom: 10%;
+  right: 25px;
+  height: 50px;
+  width: 60px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  border: none;
+  border-radius: 40%;
+  box-shadow: 1px 1px 10px #000000;
+  cursor: pointer;
+}
+
 .header-wrapper {
   padding-bottom: 30px;
 }
@@ -657,3 +678,4 @@ body.preloader-site {
   text-align: center;
   padding: 10px;
 }
+
