@@ -21,6 +21,7 @@
       crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="js/jquery.coundown.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
     <link rel="icon" type="image/png" href="image/favicon.png" />
     <!-- font add -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -350,7 +351,15 @@
     </div>
     <!-- End Main Content -->
 
+    <!-- Audio -->
+    <audio id="myAudio" src="mp3/JodohDuniaAkhirat.mp3"></audio>
+    <button onclick="togglePlayPause()" class="audio"><i class="play" data-feather="play"></i><i class="pause" data-feather="pause"></i></button>
+    <!-- End Audio -->
+
     <!-- Scripts -->
+    <script>
+      feather.replace();
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/menikah.js"></script>
     <script src="js/audio.js"></script>
@@ -364,4 +373,5 @@
     </script>
   </body>
 </html>
+
 
