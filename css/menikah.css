@@ -1,3 +1,5 @@
+
+
 @import url("https://fonts.googleapis.com/css?family=Lato|Raleway|Rouge+Script");
 .has-vertically-aligned-content {
   display: flex;
@@ -15,7 +17,27 @@ html {
   min-height: 100%;
 }
 
-.pause {
+.buka-undangan {
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #bf7877;
+  border-radius: 15px;
+  box-shadow: 1px 1px 5px whitesmoke;
+}
+
+.buka-text {
+  font-size: large;
+  font-weight: 400;
+  padding: 10px 20px 10px 20px;
+  background-color: transparent;
+  border: none;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.play {
   display: none;
 }
 
@@ -26,7 +48,7 @@ html {
   height: 50px;
   width: 60px;
   background-color: white;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   color: black;
@@ -36,9 +58,9 @@ html {
   cursor: pointer;
 }
 
-.header-wrapper {
+/* .header-wrapper {
   padding-bottom: 30px;
-}
+} */
 
 .navbar-item {
   line-height: 38px;
@@ -74,6 +96,7 @@ html {
   color: white;
   box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   font-family: "Raleway", sans-serif;
+  min-height: 100vh;
 }
 
 .hero .title {
@@ -96,6 +119,7 @@ html {
 }
 
 .hero .hero-foot {
+  display: none;
   height: 50px;
   background: white;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.082);
@@ -104,6 +128,18 @@ html {
 @media (max-width: 599px) {
   .hero .hero-foot {
     display: none;
+  }
+}
+
+@media (max-width: 770px) {
+  .hero {
+    height: 120vh;
+  }
+  .buka-undangan {
+    top: 100%;
+  }
+  .buka-text {
+    font-size: medium;
   }
 }
 
@@ -149,6 +185,7 @@ html {
 }
 
 .main-content {
+  display: none;
   padding-top: 2rem;
   color: #000;
   font-family: "Raleway", sans-serif;
@@ -208,8 +245,15 @@ html {
   }
 }
 
+@media screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
 .main-content .section-dark.foto-foto .foto-item {
   margin-bottom: 1rem;
+
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
   border-radius: 5px;
@@ -589,78 +633,6 @@ body.preloader-site {
   border-radius: 10px;
 }
 
-.foto1 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)),
-    url("../image/sherly-daeng-kang-emil.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 24rem;
-}
-
-.foto2 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)),
-    url("../image/sherly-daeng-cashbac.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 24rem;
-}
-
-.foto3 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)),
-    url("../image/sherly-daeng-selfie.jpg");
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
-  min-height: 24rem;
-}
-
-.foto4 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)),
-    url("../image/sherly-daeng-lamaran.jpg");
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
-  min-height: 24rem;
-}
-
-.foto5 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)),
-    url("../image/sherly-daeng-red-car.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 24rem;
-}
-
-.foto6 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)),
-    url("../image/sherly-daeng-engagement-ami.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 24rem;
-}
-
-.title-foto {
-  font-size: 18pt;
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  text-align: left;
-  color: white;
-}
-
-.subtitle-foto {
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  font-size: 14pt;
-  font-weight: 600;
-  margin-top: 15px;
-  text-align: left;
-  color: white;
-}
-
 .section-light {
   background-image: url(../image/divider-flowers-leaves.png);
   background-position: bottom -30px center;
@@ -678,4 +650,3 @@ body.preloader-site {
   text-align: center;
   padding: 10px;
 }
-
