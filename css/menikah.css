@@ -25,7 +25,7 @@ html {
   box-shadow: 1px 1px 5px whitesmoke;
 }
 
-.buka-text {
+.-text {
   font-size: large;
   font-weight: 400;
   padding: 10px 20px 10px 20px;
@@ -134,7 +134,7 @@ html {
     height: 120vh;
   }
   .buka-undangan {
-    top: 90%;
+    top: 100%;
   }
   .buka-text {
     font-size: medium;
