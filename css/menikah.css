@@ -243,12 +243,6 @@ html {
   }
 }
 
-@media screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
-}
-
 .main-content .section-dark.foto-foto .foto-item {
   margin-bottom: 1rem;
 
