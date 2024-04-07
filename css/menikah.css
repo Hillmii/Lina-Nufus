@@ -5,6 +5,10 @@
   justify-content: center;
 }
 
+body {
+  overflow: hidden;
+}
+
 * {
   box-sizing: border-box;
 }
